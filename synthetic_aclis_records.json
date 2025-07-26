@@ -1,0 +1,495 @@
+[
+    {
+        "patient_id": "ACLIS-8c0bd1cb",
+        "name": "John Doe",
+        "age": 45,
+        "sex": "M",
+        "dob": "1980-08-06",
+        "blood_type": "B-",
+        "encounters": [
+            {
+                "encounter_id": "E-d1cb-01",
+                "date": "2025-06-26",
+                "type": "Outpatient",
+                "chief_complaint": "Persistent cough and shortness of breath for 3 weeks.",
+                "diagnoses": [
+                    {
+                        "code": "I10",
+                        "description": "Essential (primary) hypertension"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "code": "99214",
+                        "description": "Office or other outpatient visit, established patient, 30-39 minutes"
+                    }
+                ],
+                "medications": [
+                    {
+                        "rxcui": "203166",
+                        "name": "Lisinopril 10 MG Oral Tablet"
+                    }
+                ],
+                "vitals": [
+                    {
+                        "timestamp": "2025-06-26",
+                        "hr": 85,
+                        "bp": "138/88",
+                        "spo2": 97
+                    }
+                ],
+                "labs": [],
+                "imaging_studies": [
+                    {
+                        "study_id": "IMG-4d188d",
+                        "type": "Chest X-ray",
+                        "date": "2025-06-26",
+                        "report": "A 1.5 cm nodule is noted in the right upper lobe. Recommend follow-up with CT.",
+                        "image_url": "https://via.placeholder.com/400x300/111827/6B7280?text=Chest+X-ray",
+                        "ai_analysis": {
+                            "provider": "Qure.ai qXR",
+                            "logo": "https://via.placeholder.com/80x20/10B981/FFFFFF?text=Qure.ai",
+                            "findings": [
+                                {
+                                    "finding": "Pulmonary Nodule (RUL)",
+                                    "confidence": 87,
+                                    "coordinates": [
+                                        {
+                                            "top": "40%",
+                                            "left": "60%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "contradiction_alert": null
+                        }
+                    }
+                ],
+                "pathology_reports": []
+            },
+            {
+                "encounter_id": "E-d1cb-02",
+                "date": "2025-07-11",
+                "type": "Outpatient",
+                "chief_complaint": "Follow-up on abnormal chest X-ray.",
+                "diagnoses": [],
+                "procedures": [
+                    {
+                        "code": "71260",
+                        "description": "Computed tomography, thorax; with contrast material(s)"
+                    }
+                ],
+                "medications": [],
+                "vitals": [],
+                "labs": [],
+                "imaging_studies": [
+                    {
+                        "study_id": "IMG-d6ff8b",
+                        "type": "Chest CT",
+                        "date": "2025-07-11",
+                        "report": "Confirms 1.5 cm spiculated nodule in the RUL, highly suspicious for malignancy. Recommend bronchoscopy with biopsy.",
+                        "image_url": "https://via.placeholder.com/400x300/111827/6B7280?text=Chest+CT",
+                        "ai_analysis": {
+                            "provider": "Aidoc Radiology",
+                            "logo": "https://via.placeholder.com/80x20/3B82F6/FFFFFF?text=Aidoc",
+                            "findings": [
+                                {
+                                    "finding": "Spiculated Nodule (RUL)",
+                                    "confidence": 94,
+                                    "coordinates": [
+                                        {
+                                            "top": "35%",
+                                            "left": "55%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "contradiction_alert": "Global research agent notes a new study suggesting nodules with these characteristics have a 15% higher risk of metastasis than previously thought. [View Study]"
+                        }
+                    }
+                ],
+                "pathology_reports": []
+            },
+            {
+                "encounter_id": "E-d1cb-03",
+                "date": "2025-07-19",
+                "type": "Inpatient",
+                "chief_complaint": "Scheduled bronchoscopy and biopsy.",
+                "diagnoses": [
+                    {
+                        "code": "C34.11",
+                        "description": "Malignant neoplasm of right upper lobe, bronchus or lung"
+                    }
+                ],
+                "procedures": [
+                    {
+                        "code": "31622",
+                        "description": "Bronchoscopy, rigid or flexible, with or without fluoroscopic guidance"
+                    },
+                    {
+                        "code": "31625",
+                        "description": "Bronchoscopy with bronchial or endobronchial biopsy"
+                    }
+                ],
+                "medications": [],
+                "vitals": [],
+                "labs": [
+                    {
+                        "test_name": "Potassium",
+                        "value": 4.1,
+                        "unit": "mEq/L",
+                        "ref_range": "3.5-5.2",
+                        "status": "Normal"
+                    },
+                    {
+                        "test_name": "HbA1c",
+                        "value": 6.8,
+                        "unit": "%",
+                        "ref_range": "4.0-5.6",
+                        "status": "Critical"
+                    },
+                    {
+                        "test_name": "WBC",
+                        "value": 9.5,
+                        "unit": "x10^3/uL",
+                        "ref_range": "4.5-11.0",
+                        "status": "Normal"
+                    }
+                ],
+                "imaging_studies": [],
+                "pathology_reports": [
+                    {
+                        "report_id": "PATH-77332f",
+                        "date": "2025-07-21",
+                        "specimen": "Right upper lobe bronchial biopsy",
+                        "report": "Findings consistent with non-small cell lung carcinoma, adenocarcinoma subtype.",
+                        "ai_analysis": {
+                            "provider": "Paige.AI",
+                            "logo": "https://via.placeholder.com/80x20/8B5CF6/FFFFFF?text=Paige",
+                            "findings": [
+                                {
+                                    "finding": "Adenocarcinoma cells detected",
+                                    "confidence": 99
+                                }
+                            ],
+                            "prognostic_insight": "Morphology suggests high likelihood of EGFR mutation."
+                        }
+                    }
+                ]
+            }
+        ],
+        "genomic_profile": {
+            "prognosis": {
+                "model": "TabPFN Prognostic Model",
+                "risk_score": 34,
+                "stage_prediction": "Stage IIIB",
+                "confidence": 89,
+                "key_factors": [
+                    "EGFR L858R Mutation",
+                    "Tumor Size > 1cm",
+                    "Age > 40"
+                ]
+            },
+            "mutations": [
+                {
+                    "gene": "EGFR",
+                    "variant": "L858R",
+                    "significance": "Pathogenic",
+                    "type": "Somatic"
+                },
+                {
+                    "gene": "TP53",
+                    "variant": "R273H",
+                    "significance": "Likely Pathogenic",
+                    "type": "Somatic"
+                }
+            ],
+            "suggested_tests": [
+                {
+                    "name": "FoundationOne CDx",
+                    "provider": "Foundation Medicine",
+                    "logo": "https://via.placeholder.com/80x20/8B5CF6/FFFFFF?text=Foundation",
+                    "description": "324-gene panel for solid tumors, FDA-approved companion diagnostic."
+                },
+                {
+                    "name": "Guardant360 CDx",
+                    "provider": "Guardant Health",
+                    "logo": "https://via.placeholder.com/80x20/EF4444/FFFFFF?text=Guardant",
+                    "description": "Liquid biopsy for comprehensive genomic profiling of 74 genes."
+                }
+            ]
+        },
+        "wearable_data": [
+            {
+                "date": "2025-06-26",
+                "steps": 6583,
+                "avg_hr": 80,
+                "sleep_hours": 6.6
+            },
+            {
+                "date": "2025-06-27",
+                "steps": 7544,
+                "avg_hr": 87,
+                "sleep_hours": 7.4
+            },
+            {
+                "date": "2025-06-28",
+                "steps": 6457,
+                "avg_hr": 76,
+                "sleep_hours": 5.6
+            },
+            {
+                "date": "2025-06-29",
+                "steps": 4868,
+                "avg_hr": 71,
+                "sleep_hours": 6.6
+            },
+            {
+                "date": "2025-06-30",
+                "steps": 2952,
+                "avg_hr": 84,
+                "sleep_hours": 6.4
+            },
+            {
+                "date": "2025-07-01",
+                "steps": 4734,
+                "avg_hr": 79,
+                "sleep_hours": 6.1
+            },
+            {
+                "date": "2025-07-02",
+                "steps": 4966,
+                "avg_hr": 73,
+                "sleep_hours": 6.4
+            },
+            {
+                "date": "2025-07-03",
+                "steps": 5655,
+                "avg_hr": 81,
+                "sleep_hours": 5.9
+            },
+            {
+                "date": "2025-07-04",
+                "steps": 7477,
+                "avg_hr": 70,
+                "sleep_hours": 7.3
+            },
+            {
+                "date": "2025-07-05",
+                "steps": 1947,
+                "avg_hr": 88,
+                "sleep_hours": 6.3
+            },
+            {
+                "date": "2025-07-06",
+                "steps": 5507,
+                "avg_hr": 78,
+                "sleep_hours": 6.8
+            },
+            {
+                "date": "2025-07-07",
+                "steps": 4962,
+                "avg_hr": 90,
+                "sleep_hours": 6.6
+            },
+            {
+                "date": "2025-07-08",
+                "steps": 7300,
+                "avg_hr": 70,
+                "sleep_hours": 7.3
+            },
+            {
+                "date": "2025-07-09",
+                "steps": 4586,
+                "avg_hr": 82,
+                "sleep_hours": 7.0
+            },
+            {
+                "date": "2025-07-10",
+                "steps": 3473,
+                "avg_hr": 84,
+                "sleep_hours": 6.2
+            },
+            {
+                "date": "2025-07-11",
+                "steps": 3687,
+                "avg_hr": 79,
+                "sleep_hours": 7.1
+            },
+            {
+                "date": "2025-07-12",
+                "steps": 2246,
+                "avg_hr": 74,
+                "sleep_hours": 7.2
+            },
+            {
+                "date": "2025-07-13",
+                "steps": 1735,
+                "avg_hr": 85,
+                "sleep_hours": 7.1
+            },
+            {
+                "date": "2025-07-14",
+                "steps": 5149,
+                "avg_hr": 87,
+                "sleep_hours": 6.9
+            },
+            {
+                "date": "2025-07-15",
+                "steps": 5165,
+                "avg_hr": 86,
+                "sleep_hours": 7.3
+            },
+            {
+                "date": "2025-07-16",
+                "steps": 2745,
+                "avg_hr": 77,
+                "sleep_hours": 5.6
+            },
+            {
+                "date": "2025-07-17",
+                "steps": 4859,
+                "avg_hr": 84,
+                "sleep_hours": 7.1
+            },
+            {
+                "date": "2025-07-18",
+                "steps": 5327,
+                "avg_hr": 72,
+                "sleep_hours": 5.8
+            },
+            {
+                "date": "2025-07-19",
+                "steps": 2854,
+                "avg_hr": 70,
+                "sleep_hours": 5.8
+            },
+            {
+                "date": "2025-07-20",
+                "steps": 5017,
+                "avg_hr": 83,
+                "sleep_hours": 6.5
+            },
+            {
+                "date": "2025-07-21",
+                "steps": 5163,
+                "avg_hr": 86,
+                "sleep_hours": 6.3
+            },
+            {
+                "date": "2025-07-22",
+                "steps": 6388,
+                "avg_hr": 83,
+                "sleep_hours": 6.5
+            },
+            {
+                "date": "2025-07-23",
+                "steps": 732,
+                "avg_hr": 77,
+                "sleep_hours": 5.7
+            },
+            {
+                "date": "2025-07-24",
+                "steps": 3285,
+                "avg_hr": 80,
+                "sleep_hours": 5.6
+            },
+            {
+                "date": "2025-07-25",
+                "steps": 1869,
+                "avg_hr": 86,
+                "sleep_hours": 7.3
+            }
+        ]
+    },
+    {
+        "patient_id": "ACLIS-4b9cdb11",
+        "name": "Jane Smith",
+        "age": 68,
+        "sex": "F",
+        "dob": "1957-08-12",
+        "blood_type": "O-",
+        "encounters": [
+            {
+                "encounter_id": "E-db11-01",
+                "date": "2025-06-19",
+                "type": "Inpatient",
+                "chief_complaint": "Type 2 diabetes mellitus without complications",
+                "diagnoses": [
+                    {
+                        "code": "E11.9",
+                        "description": "Type 2 diabetes mellitus without complications"
+                    }
+                ],
+                "procedures": [],
+                "medications": [],
+                "vitals": [],
+                "labs": [],
+                "imaging_studies": [],
+                "pathology_reports": []
+            }
+        ],
+        "genomic_profile": null,
+        "wearable_data": []
+    },
+    {
+        "patient_id": "ACLIS-34eb5d41",
+        "name": "Robert Brown",
+        "age": 72,
+        "sex": "M",
+        "dob": "1953-08-13",
+        "blood_type": "AB-",
+        "encounters": [
+            {
+                "encounter_id": "E-5d41-01",
+                "date": "2025-07-18",
+                "type": "Inpatient",
+                "chief_complaint": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+                "diagnoses": [
+                    {
+                        "code": "I25.10",
+                        "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris"
+                    }
+                ],
+                "procedures": [],
+                "medications": [],
+                "vitals": [],
+                "labs": [],
+                "imaging_studies": [],
+                "pathology_reports": []
+            }
+        ],
+        "genomic_profile": null,
+        "wearable_data": []
+    },
+    {
+        "patient_id": "ACLIS-a5529b79",
+        "name": "Emily Jones",
+        "age": 55,
+        "sex": "F",
+        "dob": "1970-08-09",
+        "blood_type": "O-",
+        "encounters": [
+            {
+                "encounter_id": "E-9b79-01",
+                "date": "2025-06-12",
+                "type": "Inpatient",
+                "chief_complaint": "Pneumonia, unspecified organism",
+                "diagnoses": [
+                    {
+                        "code": "J18.9",
+                        "description": "Pneumonia, unspecified organism"
+                    }
+                ],
+                "procedures": [],
+                "medications": [],
+                "vitals": [],
+                "labs": [],
+                "imaging_studies": [],
+                "pathology_reports": []
+            }
+        ],
+        "genomic_profile": null,
+        "wearable_data": []
+    }
+]
